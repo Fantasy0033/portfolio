@@ -1,0 +1,74 @@
+.about {
+    padding-top: 120px;
+    &__me {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        align-items: flex-start;
+
+    }
+    &__descr {
+        margin-left: 68px;
+    }
+    &__descrme {
+        color: #000;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        @include before_circle;
+        &:before {
+            top: -6px;
+        }
+    }
+    &__title {
+        color: #000;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    &__hr {
+        width: 60px;
+        height: 3px;
+        background-color: $main-color;
+        margin-bottom: 20px;
+    }
+    &__subtitle {
+        color: #000;
+        font-size: 14px;
+        font-weight: 500;
+        width: 570px;
+    }
+    &__static {
+        display: grid;
+        grid-template-columns: 400px 351px;
+        column-gap: 70px;
+    }
+    &__skill {
+        position: relative;
+        margin-top: 40px;
+        margin-left: 69px;
+        @include before_circle;
+        &:before {
+            top: -12px;
+            left: -16px;
+        }
+    }
+    &__subdescrskill {
+        color: #000;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    &__descrskill {
+        color: #000;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__photo {
+        width: 700px;
+        height: 600px;
+        object-fit: cover;
+        img {
+            height: 100%;
+        }
+    }
+}
